@@ -1,0 +1,98 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="SuperAdminMaster.master.cs"
+    Inherits="LearningManagementSystem.SuperAdmin.SuperAdminMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+
+    <!-- Styles -->
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/icons/fontawesome/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="../assets/icons/fontawesome/css/brands.min.css" rel="stylesheet" />
+    <link href="../assets/icons/fontawesome/css/solid.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<form runat="server">
+
+<div id="main-wrapper" class="d-flex">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="lg-logo">
+                <a href="#">
+                    <img src="../assets/images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="sm-logo">
+                <img src="../assets/images/small-logo.png" alt="logo">
+            </div>
+        </div>
+
+        <div class="sidebar-body custom-scrollbar">
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="AddSociety.aspx" class="sidebar-link active">
+                        <i class="fa-solid fa-building"></i>
+                        <p>Societies</p>
+                    </a>
+                </li>
+                 <li>
+     <a href="AddInstitute.aspx" class="sidebar-link active">
+         <i class="fa-solid fa-building"></i>
+         <p>Institutes</p>
+     </a>
+ </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+
+        <!-- Header -->
+        <div class="header d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="collapse-sidebar me-3 d-none d-lg-block">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="d-flex align-items-center">
+                <span class="user-avatar me-2">S</span>
+                <span>Super Admin</span>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="main-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+
+        <!-- Footer -->
+        <div class="footer text-center bg-white shadow-sm py-3 mt-5">
+            <p class="m-0">© 2024 LMS. All rights reserved.</p>
+        </div>
+
+    </div>
+</div>
+
+</form>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery-3.6.0.min.js"></script>
+<script src="../assets/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
